@@ -1,0 +1,13 @@
+body {
+    background: url('../background.png') no-repeat bottom right;
+    background-color: rgb(242,242,242);
+}
+
+.page {
+    min-height: 800px;
+}
+
+h1, h2 {
+    font-family: "Helvetica Neue";
+    letter-spacing: 0px;
+}
