@@ -13,14 +13,15 @@ h1, h2 {
 }
 
 h1.site-name a, h1.site-name a:visited {
-    color: #DD8C32;
+    color: #6B6762;
+    text-shadow: 0 1px #FDFDFD;
+    font-size: 1.5em;
 }
 
 h1.site-name a:hover {
-    color: #6B6762;
+    color: #DD8C32;
 }
     
-
 h1.sitename a:hover {
     color: #6B6762;
 }
