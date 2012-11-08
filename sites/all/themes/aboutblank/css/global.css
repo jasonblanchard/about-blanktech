@@ -11,3 +11,37 @@ h1, h2 {
     font-family: "Helvetica Neue";
     letter-spacing: 0px;
 }
+
+h1.site-name a, h1.site-name a:visited {
+    color: #DD8C32;
+}
+
+h1.site-name a:hover {
+    color: #6B6762;
+}
+    
+
+h1.sitename a:hover {
+    color: #6B6762;
+}
+
+nav.navigation {
+    width: 300px;
+    margin: 0 auto;
+}
+
+ul#main-menu li a {
+    font-size: 1.5em;
+    font-family: "Helvetica Neue", sans serif;
+    text-decoration: none;
+    color: black;
+    margin-right: 1em;
+}
+
+ul#main-menu li a:hover {
+    border-bottom: 3px solid #DD8C32;
+}
+
+ul#main-menu li.active a{
+    color: #6B6762;
+}
