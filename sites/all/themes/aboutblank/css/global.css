@@ -50,15 +50,16 @@ ul#main-menu li.active a{
     color: #6B6762;
 }
 
-#region-branding {
+.branding-data {
     width: 400px;
+    float: left;
 }
 
-#zone-user-wrapper {
-    width: 300px;
+.region-branding .block {
     float: right;
     padding-top: 15px;
 }
+
 
 .icon {
     width: 50px;
