@@ -1,0 +1,9 @@
+name = TimelineJS
+description = an implementation of Timeline JS http://timeline.verite.co/
+core = 7.x
+
+stylesheets[all][] = TimelineJS/compiled/css/timeline.css
+
+scripts[] = TimelineJS/compiled/js/timeline.js
+scripts[] = TimelineJS/compiled/js/storyjs-embed.js
+scripts[] = TimelineJS/compiled/js/timeline-min.js
