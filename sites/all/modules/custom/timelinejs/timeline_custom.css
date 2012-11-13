@@ -1,0 +1,13 @@
+.vco-container h2, h3 {
+    font-family: "Helvetica Neue",sans serif !important;
+    color: #6B6762 !important;
+}
+
+.vco-slider .slider-item .content .content-container .text .container p {
+    font-family: "Verdana", sans serif !important;
+    font-size: 80% !important;
+}
+
+.vco-storyjs a {
+    color: #C27E34 !important;
+}
