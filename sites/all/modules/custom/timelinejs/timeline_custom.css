@@ -11,3 +11,7 @@
 .vco-storyjs a {
     color: #C27E34 !important;
 }
+
+.slider-container-mask, .vco-slider, #timeline-embed {
+    background: #F7F7F7 !important;
+}
