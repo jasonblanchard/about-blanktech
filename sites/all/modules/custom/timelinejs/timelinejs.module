@@ -37,6 +37,10 @@ function timelinejs_menu() {
   return $items;
 }
 
+drupal_add_js(array('timelinejs' => array(
+  'source' => 'https://docs.google.com/spreadsheet/pub?key=0AlNyK0CWPkZjdE82U1dQNkRKRHdDaldmZUlnZUlBX0E&output=htmlt',
+  )), 'setting');
+
 drupal_add_js(base_path()."sites/all/modules/custom/timelinejs/timeline_embed.js", "file");
 
 
