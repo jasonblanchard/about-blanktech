@@ -37,4 +37,7 @@ function timelinejs_menu() {
   return $items;
 }
 
+drupal_add_js(base_path()."sites/all/modules/custom/timelinejs/timeline_embed.js", "file");
+
+
 
