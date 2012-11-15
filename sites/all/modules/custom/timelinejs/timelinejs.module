@@ -39,7 +39,7 @@ function timelinejs_menu() {
 
 drupal_add_js(array('timelinejs' => array(
   'timelineSource' => 'https://docs.google.com/spreadsheet/pub?key=0AlNyK0CWPkZjdE82U1dQNkRKRHdDaldmZUlnZUlBX0E&output=htmlt',
-  'embedSource' => "<script type='text/javascript' src='http://workvm/aboutblank/sites/all/modules/custom/timelinejs/TimelineJS/compiled/js/storyjs-embed.js'></script>",
+  'embedSource' => "<script type='text/javascript' src='".$GLOBALS['base_url']."/sites/all/modules/custom/timelinejs/TimelineJS/compiled/js/storyjs-embed.js'></script>",
   )), array('type' => 'setting', 'weight' => 10));
 
 drupal_add_js(base_path()."sites/all/modules/custom/timelinejs/timeline_embed.js", array('type' => 'file', 'weight' => 0));
