@@ -45,6 +45,8 @@ function timelinejs_node_load($nodes, $types) {
       )), array('type' => 'setting', 'weight' => 10));
 
     drupal_add_js(base_path()."sites/all/modules/custom/timelinejs/timeline_embed.js", array('type' => 'file', 'weight' => 0));
+
+    #drupal_add_js(base_path
   }
 }
 
