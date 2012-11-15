@@ -1,3 +1,4 @@
+  
   var timeline_config = {
       width:              '100%',
       height:             '600',
@@ -8,5 +9,5 @@
   };
 
 jQuery(document).ready(function() {
-  jQuery('#timeline-embed').append('<script type="text/javascript" src="http://workvm/aboutblank/sites/all/modules/custom/timelinejs/TimelineJS/compiled/js/storyjs-embed.js"></script>')
+  jQuery('#timeline-embed').append(Drupal.settings.timelinejs.embedSource)
 });
