@@ -66,6 +66,21 @@ function timelinejs_node_view($node, $view_mode, $langcode) {
     );
 }
 
+/**
+ * Implements hook_field_extra_fields()
+ */
+
+function timelinejs_field_extra_fields() {
+  $extra['node']['article']['display'] = array(
+    'timelinejs_timeline' => array(
+      'label' => t('My Timelinejs'),
+      'description' => t('A timeline made from Timelinejs'),
+      'weight' => 10,
+      ),
+  );
+  return $extra;
+}
+
 
 
 
