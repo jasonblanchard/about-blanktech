@@ -61,7 +61,6 @@ function timelinejs_node_view($node, $view_mode, $langcode) {
 
   $node->content['timelinejs_timeline'] = array(
     '#type' => 'item',
-    '#title' => t('timeline'),
     '#markup' => '<div id="timeline-embed"></div>',
     );
 }
