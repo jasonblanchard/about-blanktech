@@ -12,6 +12,19 @@ h1, h2 {
     letter-spacing: 0px;
 }
 
+a:link, a:visited {
+  color: #C27E34;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+span.attribution {
+  font-size: .8em;
+}
+
 .site-name a, .site-name a:visited {
     color: #6B6762;
     text-shadow: 0 1px #FDFDFD;
