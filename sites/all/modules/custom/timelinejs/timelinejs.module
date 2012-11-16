@@ -58,7 +58,7 @@ function timelinejs_node_view($node, $view_mode, $langcode) {
 
   $node->content['timelinejs_timeline'] = array(
     '#type' => 'item',
-    '#markup' => '<div id="timeline-embed"></div>',
+    '#markup' => '<div id="timeline-embed"></div><br /><span class="attributtion">Created with <a href="http://timeline.verite.co/" target="_blank">TimelineJS</a></span>',
     );
 }
 
