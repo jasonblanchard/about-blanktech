@@ -55,8 +55,7 @@ function timelinejs_node_load($nodes, $types) {
  */
 
 function timelinejs_node_view($node, $view_mode, $langcode) {
-  dpm($node);
-  if ($node->type != 'article') {
+  if ($node->field_include_timeline_['und'][0]['value'] != 1) {
     return;
   }
 
