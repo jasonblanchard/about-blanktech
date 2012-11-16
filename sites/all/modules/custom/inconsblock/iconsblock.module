@@ -16,7 +16,7 @@ function iconsblock_block_view_alter(&$data, $block) {
 
 
   foreach ($icons as $icon => $link) {
-    $output = $output."<div class='header-icon'><a href='".$link."' target='_blank'><img src='http://144.118.69.149/aboutblank/sites/default/files/".$icon."_icon.png' class='rollover' rel='http://144.118.69.149/aboutblank/sites/default/files/".$icon."_icon_over.png'></div>";
+    $output = $output."<div class='header-icon'><a href='".$link."' target='_blank'><img src='".$GLOBALS['base_url']."/sites/default/files/".$icon."_icon.png' class='rollover' rel='http://144.118.69.149/aboutblank/sites/default/files/".$icon."_icon_over.png'></div>";
   }
 
   if (($block->module == "block") && ($block->delta == 1)) {
