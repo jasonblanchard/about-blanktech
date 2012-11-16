@@ -40,6 +40,10 @@ function timelinejs_menu() {
 
 function timelinejs_node_view($node, $view_mode, $langcode) {
 
+  if (!isset($node->field_include_timeline_)) {
+    return;
+  }
+
   $timeline_field = $node->field_include_timeline_['und'][0]['value'];
 
   if ($timeline_field != 1) {
