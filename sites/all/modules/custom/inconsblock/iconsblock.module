@@ -1,0 +1,25 @@
+<?php
+
+/**
+ * @file
+ * Adds icons to the header block
+ */
+
+/**
+ * Implements hook_block_view_alter(&$data, $block)
+ */
+
+function iconsblock_block_view_alter(&$data, $block) {
+
+  $icons = array("twitter" => "https://twitter.com/About__Blank", "github" => "https://github.com/jasonblanchard", "drupal" => "http://drupal.org/user/1869336");
+  $output = "";
+
+
+  foreach ($icons as $icon => $link) {
+    $output = $output."<div class='header-icon'><a href='".$link."' target='_blank'><img src='http://144.118.69.149/aboutblank/sites/default/files/".$icon."_icon.png' class='rollover' rel='http://144.118.69.149/aboutblank/sites/default/files/".$icon."_icon_over.png'></div>";
+  }
+
+  if (($block->module == "block") && ($block->delta == 1)) {
+    $data['content'] = "$output";
+  }
+}

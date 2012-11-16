@@ -1,0 +1,5 @@
+name = Icons Block
+description = Adds icons to the block in the header
+core = 7.x
+
+scripts[] = iconsblock.js
