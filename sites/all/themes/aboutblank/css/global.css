@@ -27,10 +27,14 @@ h1, h2 {
 }
 
 nav.navigation {
-    width: 300px;
     margin: 0 auto;
     padding-top: 20px;
     padding-bottom: 20px;
+}
+
+ul#main-menu {
+  display: block;
+  text-align: center;
 }
 
 ul#main-menu li a {
