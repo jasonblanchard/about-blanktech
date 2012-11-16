@@ -63,7 +63,7 @@ function timelinejs_node_view($node, $view_mode, $langcode) {
  */
 
 function timelinejs_field_extra_fields() {
-  $extra['node']['article']['display'] = array(
+  $extra['node']['about_me']['display'] = array(
     'timelinejs_timeline' => array(
       'label' => t('My Timelinejs'),
       'description' => t('A timeline made from Timelinejs'),
