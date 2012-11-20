@@ -33,6 +33,7 @@ span.attribution {
 
 .site-name a:hover {
     color: #DD8C32;
+    text-decoration: none;
 }
     
 .sitename a:hover {
