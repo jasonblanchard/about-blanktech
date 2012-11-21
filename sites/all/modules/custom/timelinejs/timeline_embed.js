@@ -1,4 +1,5 @@
-  
+ // var timelineJsSource = Drupal.settings.timelinejs.embedSource
+
   var timeline_config = {
       width:              '100%',
       height:             '600',
