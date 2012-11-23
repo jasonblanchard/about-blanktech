@@ -83,6 +83,7 @@ ul#main-menu li.active a{
     height: 50px;
     float: left;
     padding-right: 10px;
+    display: none;
 }
 
 
