@@ -1,0 +1,25 @@
+<?php
+
+/**
+ * @file
+ * Turns tweets into nodes
+ */
+
+/**
+ * Implements hook_node_view
+**/
+
+function tweetnodes_node_view($node, $view_mode, $langcode) {
+  
+  module_load_include('inc', 'twitter');
+
+  $account = twitter_account_load(41607587);
+
+  $twitter = twitter_connect($account);
+
+  $statuses = $twitter->user_timeline($account->id);
+  dpm($statuses);
+}
+
+
+

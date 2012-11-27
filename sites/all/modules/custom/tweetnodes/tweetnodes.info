@@ -1,0 +1,3 @@
+name = Tweet Nodes
+description = Turns tweets into nodes
+core = 7.x
