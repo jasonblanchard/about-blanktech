@@ -7,3 +7,5 @@ sites/*/private
 
 timeline_embed.js
 
+*.swp
+
