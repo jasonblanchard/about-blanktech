@@ -51,10 +51,10 @@ function timelinejs_node_view($node, $view_mode, $langcode) {
   }
 
     drupal_add_js(array('timelinejs' => array(
-      'embedSource' => "<script type='text/javascript' src='".$GLOBALS['base_url']."/sites/all/modules/custom/timelinejs/TimelineJS/compiled/js/storyjs-embed.js'></script>",
+      'embedSource' => "<script type='text/javascript' src='https://docs.google.com/spreadsheet/pub?key=0AlNyK0CWPkZjdE82U1dQNkRKRHdDaldmZUlnZUlBX0E&output=htmlt'",
       )), array('type' => 'setting', 'weight' => 10));
 
-    drupal_add_js(base_path()."sites/all/modules/custom/timelinejs/timeline_embed.js", array('type' => 'file', 'weight' => 0));
+    drupal_add_js(base_path().drupal_get_path('module','timelinejs')."/timeline_embed.js", array('type' => 'file', 'weight' => 0));
 
   $node->content['timelinejs_timeline'] = array(
     '#type' => 'item',
