@@ -36,14 +36,24 @@ function hackathons_node_view($node, $view_mode, $langcode) {
 
   $hackathon_tid = $node->field_hackathon_event['und'][0]['tid'];
 
-  $hackathon = taxonomy_term_load($hackathon_tid)->name;
+  $hackathon_term  = taxonomy_term_load($hackathon_tid);
 
-  $output .= " at ".$hackathon;
+  $hackathon_name = $hackathon_term->name;
+
+  if (isset($hackathon_term->field_hackathon_site['und'][0]['url'])) {
+    
+    $link = $hackathon_term->field_hackathon_site['und'][0]['url'];
+
+    $output .=" at <a href='".$link."' target='_blank'>".$hackathon_name;
+
+  } else {
+
+    $output .= " at ".$hackathon_name;
+  }
 
   $node->content['hackathons_project_info'] = array(
     '#type' => 'item',
-    '#title' => t('This is the content'),
-    '#markup' => $output
+    '#markup' => $output,
     );
 
 }
