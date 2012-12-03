@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the hackathons feature.
+ */
+
+include_once 'hackathons.features.inc';
