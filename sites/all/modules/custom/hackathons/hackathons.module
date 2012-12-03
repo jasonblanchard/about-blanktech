@@ -26,36 +26,44 @@ function hackathons_node_view($node, $view_mode, $langcode) {
     $collaborators[] = taxonomy_term_load($tid['tid'])->name;
   }
 
-  foreach ($collaborators as $key => $collaborator) {
-    if ($key == (count($collaborator_tids)-1)) {
-      $output .= " and ".$collaborator;
-    } else {
-       $output .= $collaborator.", ";
+  if (count($collaborators) > 1 ) {
+
+    foreach ($collaborators as $key => $collaborator) {
+      if ($key == (count($collaborator_tids)-1)) {
+        $output .= " and ".$collaborator;
+      } else {
+         $output .= $collaborator.", ";
+      }
     }
+  } else {
+    $output .= $collaborators[0];
   }
 
-  $hackathon_tid = $node->field_hackathon_event['und'][0]['tid'];
+  if (isset($node->field_hackathon_event['und'][0]['tid'])) {
 
-  $hackathon_term  = taxonomy_term_load($hackathon_tid);
+    $hackathon_tid = $node->field_hackathon_event['und'][0]['tid'];
 
-  $hackathon_name = $hackathon_term->name;
+    $hackathon_term  = taxonomy_term_load($hackathon_tid);
 
-  if (isset($hackathon_term->field_hackathon_site['und'][0]['url'])) {
-    
-    $link = $hackathon_term->field_hackathon_site['und'][0]['url'];
+    $hackathon_name = $hackathon_term->name;
 
-    $output .=" at <a href='".$link."' target='_blank'>".$hackathon_name;
+    if (isset($hackathon_term->field_hackathon_site['und'][0]['url'])) {
+      
+      $link = $hackathon_term->field_hackathon_site['und'][0]['url'];
 
-  } else {
+      $output .=" at <a href='".$link."' target='_blank'>".$hackathon_name."</a>";
 
-    $output .= " at ".$hackathon_name;
+    } else {
+
+      $output .= " at ".$hackathon_name;
+    }
+
   }
 
   $node->content['hackathons_project_info'] = array(
     '#type' => 'item',
     '#markup' => $output,
     );
-
 }
 
 /**
