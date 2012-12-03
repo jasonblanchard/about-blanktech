@@ -5,3 +5,62 @@
  */
 
 include_once 'hackathons.features.inc';
+
+/**
+ * Implements hook_node_view()
+ */
+
+
+function hackathons_node_view($node, $view_mode, $langcode) {
+  if ($node->type != 'hack_project') {
+    return;
+  }
+
+  $output = "Created by ";
+
+  $collaborator_tids = $node->field_collaborators['und'];
+
+  $collaborators = array();
+
+  foreach ($collaborator_tids as $tid) {
+    $collaborators[] = taxonomy_term_load($tid['tid'])->name;
+  }
+
+  foreach ($collaborators as $key => $collaborator) {
+    if ($key == (count($collaborator_tids)-1)) {
+      $output .= " and ".$collaborator;
+    } else {
+       $output .= $collaborator.", ";
+    }
+  }
+
+  $hackathon_tid = $node->field_hackathon_event['und'][0]['tid'];
+
+  $hackathon = taxonomy_term_load($hackathon_tid)->name;
+
+  $output .= " at ".$hackathon;
+
+  $node->content['hackathons_project_info'] = array(
+    '#type' => 'item',
+    '#title' => t('This is the content'),
+    '#markup' => $output
+    );
+
+}
+
+/**
+ * Implements hook_field_extra_field()
+ */
+
+function hackathons_field_extra_fields() {
+  $extra['node']['hack_project']['display'] = array(
+    'hackathons_project_info' => array(
+      'label' => t('Processed project info'),
+      'description' => t('Processes some of the fields'),
+      'weight' => 10,
+      ),
+     );
+
+  return $extra;
+}
+
