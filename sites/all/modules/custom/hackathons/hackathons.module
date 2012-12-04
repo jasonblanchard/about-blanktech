@@ -62,7 +62,7 @@ function hackathons_node_view($node, $view_mode, $langcode) {
 
   $node->content['hackathons_project_info'] = array(
     '#type' => 'item',
-    '#markup' => $output,
+    '#markup' => "<div class='field-hack-project-info'>".$output."</div>",
     );
 }
 
