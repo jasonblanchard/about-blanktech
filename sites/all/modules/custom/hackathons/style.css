@@ -1,0 +1,19 @@
+.field-name-field-project-screenshot {
+  float: right;
+  margin-left: 10px;
+}
+
+.field-name-field-project-screenshot img {
+  border: 5px solid white;
+  box-shadow: 0 1px 10px #888;
+}
+
+.field-name-field-live-project-link, .field-name-field-github-link {
+  float: left;
+  width: 100%;
+}
+
+.view-hacks .views-row {
+  margin-bottom: 20px;
+}
+
