@@ -96,7 +96,14 @@ function hackathons_strongarm() {
           'weight' => '3',
         ),
       ),
-      'display' => array(),
+      'display' => array(
+        'hackathons_project_info' => array(
+          'default' => array(
+            'weight' => '3',
+            'visible' => TRUE,
+          ),
+        ),
+      ),
     ),
   );
   $export['field_bundle_settings_node__hack_project'] = $strongarm;

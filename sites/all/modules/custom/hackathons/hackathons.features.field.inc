@@ -52,10 +52,9 @@ function hackathons_field_default_fields() {
       'display' => array(
         'default' => array(
           'label' => 'above',
-          'module' => 'taxonomy',
           'settings' => array(),
-          'type' => 'taxonomy_term_reference_plain',
-          'weight' => '1',
+          'type' => 'hidden',
+          'weight' => '14',
         ),
         'teaser' => array(
           'label' => 'above',
@@ -121,10 +120,10 @@ function hackathons_field_default_fields() {
       'description' => '',
       'display' => array(
         'default' => array(
-          'label' => 'above',
+          'label' => 'inline',
           'module' => 'link',
           'settings' => array(),
-          'type' => 'link_separate',
+          'type' => 'link_url',
           'weight' => '5',
         ),
         'teaser' => array(
@@ -136,7 +135,7 @@ function hackathons_field_default_fields() {
       ),
       'entity_type' => 'node',
       'field_name' => 'field_github_link',
-      'label' => 'Github Link',
+      'label' => 'Source Code',
       'required' => 0,
       'settings' => array(
         'attributes' => array(
@@ -209,10 +208,9 @@ function hackathons_field_default_fields() {
       'display' => array(
         'default' => array(
           'label' => 'above',
-          'module' => 'taxonomy',
           'settings' => array(),
-          'type' => 'taxonomy_term_reference_plain',
-          'weight' => '0',
+          'type' => 'hidden',
+          'weight' => '13',
         ),
         'teaser' => array(
           'label' => 'above',
@@ -275,10 +273,10 @@ function hackathons_field_default_fields() {
       'description' => '',
       'display' => array(
         'default' => array(
-          'label' => 'above',
+          'label' => 'inline',
           'module' => 'link',
           'settings' => array(),
-          'type' => 'link_separate',
+          'type' => 'link_url',
           'weight' => '4',
         ),
         'teaser' => array(
@@ -290,7 +288,7 @@ function hackathons_field_default_fields() {
       ),
       'entity_type' => 'node',
       'field_name' => 'field_live_project_link',
-      'label' => 'Live Project Link',
+      'label' => 'Project Link',
       'required' => 0,
       'settings' => array(
         'attributes' => array(
@@ -357,17 +355,10 @@ function hackathons_field_default_fields() {
       'description' => '',
       'display' => array(
         'default' => array(
-          'label' => 'above',
-          'module' => 'date',
-          'settings' => array(
-            'format_type' => 'medium',
-            'fromto' => 'both',
-            'multiple_from' => '',
-            'multiple_number' => '',
-            'multiple_to' => '',
-          ),
-          'type' => 'date_default',
-          'weight' => '6',
+          'label' => 'hidden',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => '15',
         ),
         'teaser' => array(
           'label' => 'above',
@@ -442,7 +433,7 @@ function hackathons_field_default_fields() {
           'module' => 'text',
           'settings' => array(),
           'type' => 'text_default',
-          'weight' => '3',
+          'weight' => '2',
         ),
         'teaser' => array(
           'label' => 'above',
@@ -509,14 +500,14 @@ function hackathons_field_default_fields() {
       'description' => '',
       'display' => array(
         'default' => array(
-          'label' => 'above',
+          'label' => 'hidden',
           'module' => 'image',
           'settings' => array(
             'image_link' => '',
             'image_style' => 'large',
           ),
           'type' => 'image',
-          'weight' => '2',
+          'weight' => '1',
         ),
         'teaser' => array(
           'label' => 'above',
@@ -710,15 +701,15 @@ function hackathons_field_default_fields() {
   // Translatables
   // Included for use with string extractors like potx.
   t('Collaborators');
-  t('Github Link');
   t('Hackathon Date');
   t('Hackathon Site');
   t('Hackathon event');
   t('Link the the Hackathon website');
-  t('Live Project Link');
   t('Project Creation Date');
   t('Project Description');
+  t('Project Link');
   t('Project Screenshot');
+  t('Source Code');
   t('The date that the hackathon happened');
   t('The hackathon event where this was made');
 

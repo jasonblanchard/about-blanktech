@@ -1,6 +1,7 @@
 name = hackathons
 core = 7.x
 package = Features
+php = 5.2.4
 dependencies[] = ctools
 dependencies[] = date
 dependencies[] = features
@@ -12,7 +13,9 @@ dependencies[] = options
 dependencies[] = strongarm
 dependencies[] = taxonomy
 dependencies[] = text
+dependencies[] = views
 features[ctools][] = strongarm:strongarm:1
+features[ctools][] = views:views_default:3.0
 features[features_api][] = api:1
 features[field][] = node-hack_project-field_collaborators
 features[field][] = node-hack_project-field_github_link
@@ -39,5 +42,5 @@ features[variable][] = menu_parent_hack_project
 features[variable][] = node_options_hack_project
 features[variable][] = node_preview_hack_project
 features[variable][] = node_submitted_hack_project
-
+features[views_view][] = hacks
 stylesheets[all][] = style.css
