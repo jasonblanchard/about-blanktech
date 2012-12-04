@@ -1,0 +1,84 @@
+<?php
+/**
+ * @file
+ * Code for the hackathons feature.
+ */
+
+include_once 'hackathons.features.inc';
+
+/**
+ * Implements hook_node_view()
+ */
+
+
+function hackathons_node_view($node, $view_mode, $langcode) {
+  if ($node->type != 'hack_project') {
+    return;
+  }
+
+  $output = "Created by ";
+
+  $collaborator_tids = $node->field_collaborators['und'];
+
+  $collaborators = array();
+
+  foreach ($collaborator_tids as $tid) {
+    $collaborators[] = taxonomy_term_load($tid['tid'])->name;
+  }
+
+  if (count($collaborators) > 1 ) {
+
+    foreach ($collaborators as $key => $collaborator) {
+      if ($key == (count($collaborator_tids)-1)) {
+        $output .= " and ".$collaborator;
+      } else {
+         $output .= $collaborator.", ";
+      }
+    }
+  } else {
+    $output .= $collaborators[0];
+  }
+
+  if (isset($node->field_hackathon_event['und'][0]['tid'])) {
+
+    $hackathon_tid = $node->field_hackathon_event['und'][0]['tid'];
+
+    $hackathon_term  = taxonomy_term_load($hackathon_tid);
+
+    $hackathon_name = $hackathon_term->name;
+
+    if (isset($hackathon_term->field_hackathon_site['und'][0]['url'])) {
+      
+      $link = $hackathon_term->field_hackathon_site['und'][0]['url'];
+
+      $output .=" at <a href='".$link."' target='_blank'>".$hackathon_name."</a>";
+
+    } else {
+
+      $output .= " at ".$hackathon_name;
+    }
+
+  }
+
+  $node->content['hackathons_project_info'] = array(
+    '#type' => 'item',
+    '#markup' => $output,
+    );
+}
+
+/**
+ * Implements hook_field_extra_field()
+ */
+
+function hackathons_field_extra_fields() {
+  $extra['node']['hack_project']['display'] = array(
+    'hackathons_project_info' => array(
+      'label' => t('Processed project info'),
+      'description' => t('Processes some of the fields'),
+      'weight' => 10,
+      ),
+     );
+
+  return $extra;
+}
+
