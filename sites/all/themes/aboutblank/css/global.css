@@ -25,9 +25,15 @@ span.attribution {
   font-size: .8em;
 }
 
+.zone-branding-wrapper {
+  height: 85px;
+  background: #E2E2E2;
+  border-bottom: 1px solid #CCC;
+}
+
 .site-name a, .site-name a:visited {
     color: #6B6762;
-    text-shadow: 0 1px #FDFDFD;
+    text-shadow: 0 1px #F7F7F7;
     font-size: 1.5em;
 }
 
