@@ -1,6 +1,8 @@
 body {
     background: url('../background.png') no-repeat right bottom;
     background-color: rgb(242,242,242);
+    font-family: "Lucida Grande";
+    color: #4B4A4A;
 }
 
 .page {
