@@ -57,7 +57,7 @@ function delicious_import_feeds_importer_default() {
           0 => array(
             'source' => 'jsonpath_parser:0',
             'target' => 'title',
-            'unique' => FALSE,
+            'unique' => 1,
           ),
           1 => array(
             'source' => 'jsonpath_parser:1',
