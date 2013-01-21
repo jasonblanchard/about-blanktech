@@ -1,7 +1,10 @@
 .view-content-feed  .views-row {
   margin-bottom: 20px;
-  border-bottom: 1px solid #DADADA;
   padding-bottom: 10px;
+}
+
+.node-twitter-message, .node-delicious-link {
+  padding: 10px;
 }
 
 .node-twitter-message .group-left, .node-delicious-link .group-left {
@@ -10,4 +13,14 @@
 
 .node-twitter-message .group-right, .node-delicious-link .group-right {
   width: 90% !important;
+}
+
+.node-twitter-message img {
+  float: right;
+  margin-right: 10px;
+}
+
+.node-delicious-link img {
+  float: right;
+  margin-right: 20px;
 }
