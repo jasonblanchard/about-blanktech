@@ -3,3 +3,11 @@
   border-bottom: 1px solid #DADADA;
   padding-bottom: 10px;
 }
+
+.node-twitter-message .group-left, .node-delicious-link .group-left {
+  width: 10% !important;
+}
+
+.node-twitter-message .group-right, .node-delicious-link .group-right {
+  width: 90% !important;
+}

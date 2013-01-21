@@ -16,7 +16,10 @@ function hackathons_default_page_manager_pages() {
   $page->admin_title = 'Hacks View Container';
   $page->admin_description = 'Shows the hacks view without a page title';
   $page->path = 'hacks';
-  $page->access = array();
+  $page->access = array(
+    'type' => 'none',
+    'settings' => NULL,
+  );
   $page->menu = array(
     'type' => 'normal',
     'title' => 'Hacks',
