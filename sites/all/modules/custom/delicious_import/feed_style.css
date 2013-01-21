@@ -20,7 +20,24 @@
   margin-right: 10px;
 }
 
+.field-name-post-date {
+  color: rgb(187, 185, 185);
+}
+
 .node-delicious-link img {
   float: right;
   margin-right: 20px;
 }
+
+.node-delicious-link .field-name-field-tags {
+  margin-top: 10px;
+  font-size: .9em;
+}
+
+.node-blog-post {
+  background: #E2E2E2;
+  padding: 10px;
+  border-radius: 3px;
+}
+
+
