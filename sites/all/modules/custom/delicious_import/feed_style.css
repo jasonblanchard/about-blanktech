@@ -22,6 +22,7 @@
 
 .field-name-post-date {
   color: rgb(187, 185, 185);
+  font-size: .9em;
 }
 
 .node-delicious-link img {
@@ -30,7 +31,7 @@
 }
 
 .node-delicious-link .field-name-field-tags {
-  margin-top: 10px;
+  margin-top: 20px;
   font-size: .9em;
 }
 

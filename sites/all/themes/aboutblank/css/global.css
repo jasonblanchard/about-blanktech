@@ -72,7 +72,7 @@ ul#main-menu li a:hover {
 }
 
 ul#main-menu li.active a{
-    color: #6B6762;
+    color: rgba(194, 126, 52, 0.8);
 }
 
 .branding-data {
