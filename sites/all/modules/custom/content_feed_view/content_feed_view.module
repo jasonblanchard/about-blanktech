@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the content_feed_view feature.
+ */
+
+include_once 'content_feed_view.features.inc';

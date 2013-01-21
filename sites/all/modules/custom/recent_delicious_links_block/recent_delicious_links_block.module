@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the recent_delicious_links_block feature.
+ */
+
+include_once 'recent_delicious_links_block.features.inc';
