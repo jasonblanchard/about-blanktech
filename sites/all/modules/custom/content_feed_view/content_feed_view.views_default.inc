@@ -22,7 +22,7 @@ function content_feed_view_views_default_views() {
 
   /* Display: Master */
   $handler = $view->new_display('default', 'Master', 'default');
-  $handler->display->display_options['title'] = 'Content Feed';
+  $handler->display->display_options['title'] = 'Stuff Feed';
   $handler->display->display_options['use_more_always'] = FALSE;
   $handler->display->display_options['access']['type'] = 'perm';
   $handler->display->display_options['cache']['type'] = 'none';
@@ -60,6 +60,7 @@ function content_feed_view_views_default_views() {
   $handler->display->display_options['filters']['type']['table'] = 'node';
   $handler->display->display_options['filters']['type']['field'] = 'type';
   $handler->display->display_options['filters']['type']['value'] = array(
+    'blog_post' => 'blog_post',
     'delicious_link' => 'delicious_link',
     'twitter_message' => 'twitter_message',
   );

@@ -19,18 +19,18 @@ function twitter_import_ds_layout_settings_info() {
   $ds_layout->layout = 'ds_2col';
   $ds_layout->settings = array(
     'regions' => array(
-      'right' => array(
-        0 => 'field_twitter_body',
-        1 => 'field_tags',
-      ),
       'left' => array(
-        2 => 'field_twitter_icon',
+        0 => 'field_twitter_icon',
+      ),
+      'right' => array(
+        1 => 'post_date',
+        2 => 'field_twitter_body',
       ),
     ),
     'fields' => array(
-      'field_twitter_body' => 'right',
-      'field_tags' => 'right',
       'field_twitter_icon' => 'left',
+      'post_date' => 'right',
+      'field_twitter_body' => 'right',
     ),
     'classes' => array(),
     'wrappers' => array(

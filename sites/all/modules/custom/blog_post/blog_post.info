@@ -1,6 +1,7 @@
 name = blog_post
 core = 7.x
 package = Features
+php = 5.2.4
 dependencies[] = ctools
 dependencies[] = delicious_import
 dependencies[] = features
