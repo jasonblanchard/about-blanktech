@@ -60,18 +60,18 @@ function delicious_import_feeds_importer_default() {
             'unique' => 1,
           ),
           1 => array(
-            'source' => 'jsonpath_parser:1',
-            'target' => 'field_delicious_timestamp:start',
-            'unique' => FALSE,
-          ),
-          2 => array(
             'source' => 'jsonpath_parser:2',
             'target' => 'field_delicious_url:url',
             'unique' => FALSE,
           ),
-          3 => array(
+          2 => array(
             'source' => 'jsonpath_parser:3',
             'target' => 'field_tags',
+            'unique' => FALSE,
+          ),
+          3 => array(
+            'source' => 'jsonpath_parser:4',
+            'target' => 'created',
             'unique' => FALSE,
           ),
         ),
