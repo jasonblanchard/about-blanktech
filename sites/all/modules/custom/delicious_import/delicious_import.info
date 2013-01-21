@@ -4,6 +4,7 @@ package = Features
 php = 5.2.4
 dependencies[] = ctools
 dependencies[] = date
+dependencies[] = ds
 dependencies[] = features
 dependencies[] = feeds
 dependencies[] = field_sql_storage
