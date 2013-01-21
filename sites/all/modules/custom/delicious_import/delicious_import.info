@@ -34,3 +34,4 @@ features[variable][] = menu_parent_delicious_link
 features[variable][] = node_options_delicious_link
 features[variable][] = node_preview_delicious_link
 features[variable][] = node_submitted_delicious_link
+stylesheets[all][] = feed_style.css
