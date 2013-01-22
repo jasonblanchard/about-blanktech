@@ -23,14 +23,14 @@ function twitter_import_ds_layout_settings_info() {
         0 => 'field_twitter_icon',
       ),
       'right' => array(
-        1 => 'post_date',
-        2 => 'field_twitter_body',
+        1 => 'field_twitter_body',
+        2 => 'post_date',
       ),
     ),
     'fields' => array(
       'field_twitter_icon' => 'left',
-      'post_date' => 'right',
       'field_twitter_body' => 'right',
+      'post_date' => 'right',
     ),
     'classes' => array(),
     'wrappers' => array(
