@@ -31,17 +31,17 @@ function delicious_import_feeds_importer_default() {
         'context' => '$.*',
         'sources' => array(
           'jsonpath_parser:0' => 'd',
-          'jsonpath_parser:1' => 'dt',
           'jsonpath_parser:2' => 'u',
           'jsonpath_parser:3' => 't[*]',
+          'jsonpath_parser:4' => 'dt',
         ),
         'debug' => array(
           'options' => array(
             'context' => 'context',
             'jsonpath_parser:0' => 'jsonpath_parser:0',
-            'jsonpath_parser:1' => 'jsonpath_parser:1',
             'jsonpath_parser:2' => 'jsonpath_parser:2',
             'jsonpath_parser:3' => 0,
+            'jsonpath_parser:4' => 0,
           ),
         ),
       ),

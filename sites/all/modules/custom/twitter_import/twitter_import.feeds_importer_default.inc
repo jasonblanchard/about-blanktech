@@ -32,14 +32,16 @@ function twitter_import_feeds_importer_default() {
         'sources' => array(
           'jsonpath_parser:0' => 'id',
           'jsonpath_parser:1' => 'text',
-          'jsonpath_parser:2' => 'created_at',
+          'jsonpath_parser:3' => 'created_at',
+          'jsonpath_parser:4' => 'entities.hashtags[*].text',
         ),
         'debug' => array(
           'options' => array(
             'context' => 'context',
             'jsonpath_parser:0' => 'jsonpath_parser:0',
             'jsonpath_parser:1' => 'jsonpath_parser:1',
-            'jsonpath_parser:2' => 'jsonpath_parser:2',
+            'jsonpath_parser:3' => 0,
+            'jsonpath_parser:4' => 0,
           ),
         ),
       ),
