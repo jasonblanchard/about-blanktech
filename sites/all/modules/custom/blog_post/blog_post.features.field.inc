@@ -50,7 +50,7 @@ function blog_post_field_default_fields() {
           'module' => 'text',
           'settings' => array(),
           'type' => 'text_default',
-          'weight' => 0,
+          'weight' => '2',
         ),
         'teaser' => array(
           'label' => 'hidden',
@@ -124,11 +124,14 @@ function blog_post_field_default_fields() {
       'description' => '',
       'display' => array(
         'default' => array(
-          'label' => 'above',
-          'module' => 'taxonomy',
-          'settings' => array(),
-          'type' => 'taxonomy_term_reference_link',
-          'weight' => 1,
+          'label' => 'hidden',
+          'module' => 'ds',
+          'settings' => array(
+            'taxonomy_term_link' => 0,
+            'taxonomy_term_separator' => ', ',
+          ),
+          'type' => 'ds_taxonomy_separator',
+          'weight' => '3',
         ),
         'teaser' => array(
           'label' => 'above',

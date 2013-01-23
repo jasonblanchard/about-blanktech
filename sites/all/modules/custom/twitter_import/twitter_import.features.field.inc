@@ -137,7 +137,7 @@ function twitter_import_field_default_fields() {
       'label' => 'Twitter Body',
       'required' => 0,
       'settings' => array(
-        'text_processing' => '0',
+        'text_processing' => '1',
         'user_register_form' => FALSE,
       ),
       'widget' => array(
@@ -191,7 +191,7 @@ function twitter_import_field_default_fields() {
           'label' => 'hidden',
           'module' => 'image',
           'settings' => array(
-            'image_link' => '',
+            'image_link' => 'content',
             'image_style' => '',
           ),
           'type' => 'image',
