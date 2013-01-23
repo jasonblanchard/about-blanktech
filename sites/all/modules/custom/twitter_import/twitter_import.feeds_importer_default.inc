@@ -34,6 +34,7 @@ function twitter_import_feeds_importer_default() {
           'jsonpath_parser:1' => 'text',
           'jsonpath_parser:3' => 'created_at',
           'jsonpath_parser:4' => 'entities.hashtags[*].text',
+          'jsonpath_parser:5' => 'id',
         ),
         'debug' => array(
           'options' => array(
@@ -42,6 +43,7 @@ function twitter_import_feeds_importer_default() {
             'jsonpath_parser:1' => 'jsonpath_parser:1',
             'jsonpath_parser:3' => 0,
             'jsonpath_parser:4' => 0,
+            'jsonpath_parser:5' => 0,
           ),
         ),
       ),
@@ -72,6 +74,11 @@ function twitter_import_feeds_importer_default() {
           3 => array(
             'source' => 'jsonpath_parser:4',
             'target' => 'field_tags',
+            'unique' => FALSE,
+          ),
+          4 => array(
+            'source' => 'jsonpath_parser:5',
+            'target' => 'field_twitter_uid',
             'unique' => FALSE,
           ),
         ),

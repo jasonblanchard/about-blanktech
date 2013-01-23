@@ -9,6 +9,10 @@
  */
 function twitter_import_ctools_plugin_api() {
   list($module, $api) = func_get_args();
+  if ($module == "custom_formatters" && $api == "custom_formatters") {
+    return array("version" => "2");
+  }
+  list($module, $api) = func_get_args();
   if ($module == "ds" && $api == "ds") {
     return array("version" => "1");
   }
