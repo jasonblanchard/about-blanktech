@@ -120,9 +120,9 @@ function twitter_import_field_default_fields() {
       'display' => array(
         'default' => array(
           'label' => 'hidden',
-          'module' => 'text',
+          'module' => 'custom_formatters',
           'settings' => array(),
-          'type' => 'text_default',
+          'type' => 'custom_formatters_twitter_message_body',
           'weight' => '1',
         ),
         'teaser' => array(
