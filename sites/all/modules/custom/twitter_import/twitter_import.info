@@ -24,7 +24,6 @@ features[feeds_importer][] = twitter_messages
 features[field][] = node-twitter_message-field_tags
 features[field][] = node-twitter_message-field_twitter_body
 features[field][] = node-twitter_message-field_twitter_icon
-features[field][] = node-twitter_message-field_twitter_uid
 features[formatters][] = twitter_icon_link
 features[formatters][] = twitter_message_body
 features[node][] = twitter_message

@@ -30,11 +30,11 @@ function twitter_import_feeds_importer_default() {
       'config' => array(
         'context' => '$.*',
         'sources' => array(
-          'jsonpath_parser:0' => 'id',
+          'jsonpath_parser:0' => 'id_str',
           'jsonpath_parser:1' => 'text',
           'jsonpath_parser:3' => 'created_at',
           'jsonpath_parser:4' => 'entities.hashtags[*].text',
-          'jsonpath_parser:5' => 'id',
+          'jsonpath_parser:5' => 'id_str',
         ),
         'debug' => array(
           'options' => array(
@@ -74,11 +74,6 @@ function twitter_import_feeds_importer_default() {
           3 => array(
             'source' => 'jsonpath_parser:4',
             'target' => 'field_tags',
-            'unique' => FALSE,
-          ),
-          4 => array(
-            'source' => 'jsonpath_parser:5',
-            'target' => 'field_twitter_uid',
             'unique' => FALSE,
           ),
         ),
