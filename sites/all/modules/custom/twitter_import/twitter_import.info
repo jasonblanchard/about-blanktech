@@ -40,5 +40,4 @@ features[variable][] = menu_parent_twitter_message
 features[variable][] = node_options_twitter_message
 features[variable][] = node_preview_twitter_message
 features[variable][] = node_submitted_twitter_message
-scripts[] = timeago.js
-scripts[] = change_times.js
+scripts[] = highlight_tweet.js
