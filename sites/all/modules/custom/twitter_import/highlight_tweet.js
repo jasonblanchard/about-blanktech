@@ -8,7 +8,7 @@
 
            var target = 'div#' + String(id) + ' p';
            
-           $(target).css('color','#C27E34');
+           $(target).addClass('twitter-highlighted-text');
          }, 
          function() {
 
@@ -16,7 +16,7 @@
 
            var target = 'div#' + String(id) + ' p';
 
-           $(target).css('color','rgb(75, 74, 74)');
+           $(target).removeClass('twitter-highlighted-text');
          });
        }
    }
