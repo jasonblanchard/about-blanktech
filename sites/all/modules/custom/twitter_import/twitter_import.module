@@ -6,19 +6,5 @@
 
 include_once 'twitter_import.features.inc';
 
-/**
- * Implements hook_node_view_alter().
- * 
- * Adds <abbr> tag around date so TimeAgo library can find it.
- */
-function twitter_import_node_view_alter(&$build) {
 
-  if ($build['#bundle'] != "twitter_message") {
-    return;
-  }
 
-  $timestamp = format_date($build['#node']->created, 'custom', 'c');
-  $post_date = $build['post_date']['#items'][0]['value'];
-
-  $build['post_date'][0]['#markup'] = "<abbr class='timeago' title='$timestamp'>$post_date</abbr>";
-}
