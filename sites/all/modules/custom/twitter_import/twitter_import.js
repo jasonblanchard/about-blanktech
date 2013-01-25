@@ -20,4 +20,12 @@
          });
        }
    }
+
+   Drupal.behaviors.twitterImportLinkTarget = {
+     attach: function(context, settings) {
+       $('.field-name-field-twitter-body a').attr('target', '_blank');
+     }
+   }
 })(jQuery);
+
+
