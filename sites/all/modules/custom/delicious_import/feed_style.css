@@ -53,7 +53,7 @@
   color: rgb(187, 185, 185);
 }
 
-.block-menu-feed-filter {
+.zone-header {
   background: #E2E2E2;
   padding: 10px;
   box-shadow: inset 0 0px 10px rgb(173, 173, 173);
@@ -61,16 +61,16 @@
   margin-bottom: 10px;
 }
 
-.block-menu-feed-filter h2.block-title {
+.zone-header h2.block-title {
   float: left;
   margin-right: 10px;
 }
 
-.block-menu-feed-filter ul {
+.zone-header ul {
   padding-top: 5px;
 }
 
-.block-menu-feed-filter ul.menu li {
+.zone-header ul.menu li {
   display: inline;
 }
 
