@@ -29,16 +29,19 @@
 
    Drupal.behaviors.twitterImportFeedFilter = {
      attach: function(context, settings) {
-       $('.region-header-first').hide();
 
-       $('.region-header-second').html('<button>Filter Feed</button>');
+       if (Drupal.settings.twitterImport.currentPath == 'feed') {
 
-       $('.region-header-second button').click( function() {
-         $('.region-header-first').slideToggle('fast');
-       });
+         $('.region-header-first').hide();
+
+         $('.region-header-second').html('<button>Filter Feed</button>');
+
+         $('.region-header-second button').click( function() {
+           $('.region-header-first').slideToggle('fast');
+         });
+       }
      }
    }
-
 })(jQuery);
 
 

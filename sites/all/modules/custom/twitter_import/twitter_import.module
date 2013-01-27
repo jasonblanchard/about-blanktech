@@ -5,3 +5,9 @@
  */
 
 include_once 'twitter_import.features.inc';
+
+$current_path = arg(0);
+
+drupal_add_js(array('twitterImport' => array(
+  'currentPath' => $current_path,
+)), array('type' => 'setting'));
