@@ -53,6 +53,10 @@
   color: rgb(187, 185, 185);
 }
 
+.zone-header-wrapper {
+  margin-top: -10px;
+}
+
 .region-header-first {
   background: #E2E2E2;
   padding: 10px;
