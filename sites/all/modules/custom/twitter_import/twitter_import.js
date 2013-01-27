@@ -34,9 +34,9 @@
 
          $('.region-header-first').hide();
 
-         $('.region-header-second').html('<button>Filter Feed</button>');
+         $('.region-header-second').html('<a class="button">Filter Feed</a>');
 
-         $('.region-header-second button').click( function() {
+         $('.region-header-second a').click( function() {
            $('.region-header-first').slideToggle('fast');
          });
        }

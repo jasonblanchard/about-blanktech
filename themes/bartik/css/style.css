@@ -1112,6 +1112,7 @@ a.button:focus,
 a.button:active {
   text-decoration: none;
   color: #5a5a5a;
+  background: black;
 }
 
 /* -------------- Form Elements   ------------- */
