@@ -26,6 +26,19 @@
        $('.field-name-field-twitter-body a').attr('target', '_blank');
      }
    }
+
+   Drupal.behaviors.twitterImportFeedFilter = {
+     attach: function(context, settings) {
+       $('.region-header-first').hide();
+
+       $('.region-header-second').html('<button>Filter Feed</button>');
+
+       $('.region-header-second button').click( function() {
+         $('.region-header-first').slideToggle('fast');
+       });
+     }
+   }
+
 })(jQuery);
 
 
