@@ -9,8 +9,10 @@ include_once 'twitter_import.features.inc';
 function twitter_import_page_alter(&$page) {
 
   $current_path = arg(0);
+  $arg1 = arg(1);
 
   drupal_add_js(array('twitterImport' => array(
     'currentPath' => $current_path,
+    'arg1' => $arg1,
   )), array('type' => 'setting'));
 }

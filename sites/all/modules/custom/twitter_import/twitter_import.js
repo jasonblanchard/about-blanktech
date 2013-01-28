@@ -32,7 +32,9 @@
 
        if (Drupal.settings.twitterImport.currentPath == 'feed') {
 
-         $('.region-header-first').hide();
+         if (Drupal.settings.twitterImport.arg1 == null) { 
+           $('.region-header-first').hide();
+         }
 
          $('.region-header-second').html('<a class="button">Filter Feed</a>');
 
