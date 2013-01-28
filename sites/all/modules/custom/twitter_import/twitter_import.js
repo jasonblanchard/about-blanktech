@@ -32,6 +32,9 @@
 
        if (Drupal.settings.twitterImport.currentPath == 'feed') {
 
+         // TODO: Remove this if I find a better way
+         $(".main-menu li:contains('Feed')").addClass('active-trail active');
+
          if (Drupal.settings.twitterImport.arg1 == null) { 
            $('.region-header-first').hide();
          }
