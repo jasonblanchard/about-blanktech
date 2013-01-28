@@ -81,3 +81,20 @@
 .region-header-second {
   margin-bottom: 10px;
 }
+
+.block-menu-feed-filter a.active {
+  background: rgb(101, 146, 202);
+  padding: 3px;
+  border-radius: 2px;
+  color: rgb(250, 247, 247);
+}
+
+.block-menu-feed-filter a:hover {
+  text-decoration: none;
+  color: rgb(101, 146, 202);
+}
+
+.block-menu-feed-filter a.active:hover {
+  color: white;
+  background: rgb(79, 115, 160);
+}
