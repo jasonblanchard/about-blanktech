@@ -5,3 +5,18 @@
  */
 
 include_once 'content_feed_view.features.inc';
+
+/**
+ * Sample code to view taxonomy term paths
+
+function content_feed_view_node_view($node, $view_mode, $langcode) {
+
+  if (isset($node->field_tags['und'])) {
+    foreach ($node->field_tags['und'] as $term) {
+      $t = taxonomy_term_load($term['tid']);
+      dpm(taxonomy_term_uri($t));
+    }
+  }
+}
+
+**/
