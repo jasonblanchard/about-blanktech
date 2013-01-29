@@ -82,6 +82,10 @@
   margin-bottom: 10px;
 }
 
+.block-menu-feed-filter a {
+  color: rgb(104, 100, 100);
+}
+
 .block-menu-feed-filter a.active {
   background: rgb(101, 146, 202);
   padding: 3px;
