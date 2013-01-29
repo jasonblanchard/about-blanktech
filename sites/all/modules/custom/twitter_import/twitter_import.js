@@ -30,7 +30,7 @@
    Drupal.behaviors.twitterImportFeedFilter = {
      attach: function(context, settings) {
 
-       if (Drupal.settings.twitterImport.currentPath == 'feed' || 'term') {
+       if ((Drupal.settings.twitterImport.currentPath == 'feed') || (Drupal.settings.twitterImport.currentPath == 'taxonomy')) {
 
          // TODO: Remove this if I find a better way
          $(".main-menu li:contains('Feed')").addClass('active-trail active');
