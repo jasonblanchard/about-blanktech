@@ -109,11 +109,6 @@ ul#main-menu li.active a{
     color: rgba(194, 126, 52, 0.8);
 }
 
-.branding-data {
-    width: 400px;
-    float: left;
-}
-
 .region-branding .block {
     float: right;
     padding-top: 15px;
@@ -128,4 +123,8 @@ ul#main-menu li.active a{
     display: none;
 }
 
-
+.branding-data { 
+    width: 315px; 
+    float: none; 
+    margin: 0 auto; 
+}

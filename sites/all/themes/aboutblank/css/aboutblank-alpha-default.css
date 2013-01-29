@@ -2,3 +2,8 @@
 .header-icon {
         display: inline;
 }
+
+.branding-data {
+    width: 400px;
+    float: left;
+}
