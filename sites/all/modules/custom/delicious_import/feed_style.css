@@ -102,3 +102,35 @@
   color: white;
   background: rgb(79, 115, 160);
 }
+
+/** Feed Filter Layout **/
+
+.region-header-first .block-menu-feed-filter {
+  width: 50%;
+  float: left;
+}
+
+.region-header-first .block-tagclouds {
+  width: 50%;
+  float: right;
+}
+
+.region-header-first .block-views-exp-content-feed-page {
+  width: 50%;
+  float: left;
+}
+
+/** **/
+
+.region-header-first .block-tagclouds h2 {
+  float: none;
+  color: rgb(75, 74, 74);
+}
+
+.region-header-first .block-tagclouds {
+  color: rgb(187, 185, 185);
+}
+
+.region-header-first [title="more tags"] {
+  display: none;
+}
