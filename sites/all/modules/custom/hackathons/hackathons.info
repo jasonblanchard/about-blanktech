@@ -50,4 +50,3 @@ features[variable][] = node_options_hack_project
 features[variable][] = node_preview_hack_project
 features[variable][] = node_submitted_hack_project
 features[views_view][] = hacks
-stylesheets[all][] = style.css
