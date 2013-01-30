@@ -3,7 +3,13 @@
     attach: function(context, settings) {
 
       var origImages = $('.field-name-field-project-screenshot img');
-      var test = origImages.width();
+      imageWidths = [];
+      imageHeights = [];
+
+      for (i=0; i < origImages.length; i++) {
+        imageWidths.push(origImages[i].width);
+        imageHeights.push(origImages[i].height);
+      }
 
       $(window).resize(function() {
         firstBreakpoint(origImages);
@@ -16,16 +22,21 @@
         for (i=0; i < images.length; i++) {
 
           var screenshot = images[i];
-          var origWidth = origImages[i].width;
-          var origHeight = origImages[i].height;
+          var origWidth = imageWidths[i];
+          var origHeight = imageHeights[i];
           var newWidth;
           var newHeight;
 
-          if ($(document).width() < 980) {
+          if ($(document).width() < 1000) {
             newWidth = origWidth * .7;
             newHeight = origHeight * .7;
             $(screenshot).css("width", newWidth);
             $(screenshot).css("height", newHeight);
+          }
+
+          else {
+            $(screenshot).css("width", origWidth);
+            $(screenshot).css("height", origHeight);
           }
         }
       }
