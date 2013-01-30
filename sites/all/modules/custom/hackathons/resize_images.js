@@ -5,6 +5,7 @@
       var origImages = $('.field-name-field-project-screenshot img');
       imageWidths = [];
       imageHeights = [];
+      var ratio;
 
       for (i=0; i < origImages.length; i++) {
         imageWidths.push(origImages[i].width);
@@ -12,7 +13,10 @@
       }
 
       $(window).resize(function() {
+        ratio = $(window).width() / $(window).height();
+
         firstBreakpoint(origImages);
+        mobileBreakPoint(ratio);
       });
 
       function firstBreakpoint(origImages) {
@@ -34,10 +38,16 @@
             $(screenshot).css("height", newHeight);
           }
 
-          else {
+          else if ($(document).width() > 1000) {
             $(screenshot).css("width", origWidth);
             $(screenshot).css("height", origHeight);
           }
+        }
+      }
+
+      function mobileBreakPoint(ratio) {
+        if ($(document).width() < 740) {
+          console.log(ratio);
         }
       }
 
