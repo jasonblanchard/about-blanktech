@@ -43,11 +43,6 @@
           }
 
           else if ($(document).width() < 780) {
-            newWidth = origWidth * ratio;
-            console.log(newWidth);
-            newHeight = origHeight * ratio;
-            $(screenshot).css("width", newWidth);
-            $(screenshot).css("height", newHeight);
           }
         }
       }
