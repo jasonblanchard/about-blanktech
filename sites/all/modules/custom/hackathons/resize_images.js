@@ -3,8 +3,8 @@
     attach: function(context, settings) {
 
       var origImages = $('.field-name-field-project-screenshot img');
-      imageWidths = [];
-      imageHeights = [];
+      var imageWidths = [];
+      var imageHeights = [];
       var windowRatio;
 
       for (i=0; i < origImages.length; i++) {
@@ -46,8 +46,10 @@
             newWidth = origWidth * ratio;
             console.log(newWidth);
             newHeight = origHeight * ratio;
-            $(screenshot).css("width", newWidth);
-            $(screenshot).css("height", newHeight);
+            if (newWidth < origWidth) {
+              $(screenshot).css("width", newWidth);
+              $(screenshot).css("height", newHeight);
+            }
           }
         }
       }
