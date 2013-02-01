@@ -6,4 +6,4 @@ sites/*/files
 sites/*/private
 timeline_embed.js
 *.swp
-
+cache/*
