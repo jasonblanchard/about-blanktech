@@ -23,3 +23,20 @@
 .view-hacks .views-row-last {
   border-bottom: 0px;
 }
+
+/** Feed Filter Layout **/
+
+.region-header-first .block-menu-feed-filter {
+  width: 50%;
+  float: left;
+}
+
+.region-header-first .block-tagclouds {
+  width: 50%;
+  float: right;
+}
+
+.region-header-first .block-views-exp-content-feed-page {
+  width: 50%;
+  float: left;
+}
