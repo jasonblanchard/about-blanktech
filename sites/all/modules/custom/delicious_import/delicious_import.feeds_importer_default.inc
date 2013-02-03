@@ -37,9 +37,9 @@ function delicious_import_feeds_importer_default() {
         ),
         'debug' => array(
           'options' => array(
-            'context' => 'context',
-            'jsonpath_parser:0' => 'jsonpath_parser:0',
-            'jsonpath_parser:2' => 'jsonpath_parser:2',
+            'context' => 0,
+            'jsonpath_parser:0' => 0,
+            'jsonpath_parser:2' => 0,
             'jsonpath_parser:3' => 0,
             'jsonpath_parser:4' => 0,
           ),
