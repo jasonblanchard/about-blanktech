@@ -97,7 +97,7 @@ ul#main-menu li a {
     font-family: "Helvetica Neue", sans serif;
     text-decoration: none;
     text-shadow: 0 1px #FDFDFD;
-    color: black;
+    color: rgb(80, 80, 80);
     margin-right: 1em;
 }
 
