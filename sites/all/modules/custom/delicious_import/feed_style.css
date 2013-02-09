@@ -131,3 +131,19 @@
   padding-top: 20px;
   padding-bottom: 20px;
 }
+
+/* Code Blocks */
+
+pre.prettyprint {
+  border-radius: 3px;
+  border: 1px solid white;
+  font-family: "Consolas", "Monaco";
+}
+
+ol.linenums {
+  padding-left: 0.5em !important;
+}
+
+ol.linenums li {
+  list-style-type: decimal;
+}
