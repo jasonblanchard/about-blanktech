@@ -47,6 +47,7 @@
   color: rgb(187, 185, 185);
 }
 
+
 .zone-header-wrapper {
   margin-top: -10px;
 }
@@ -147,3 +148,8 @@ ol.linenums {
 ol.linenums li {
   list-style-type: decimal;
 }
+
+.field-name-field-tags a, .field-name-field-tags a:visited {
+  color: rgb(79,115,160) !important;
+}
+

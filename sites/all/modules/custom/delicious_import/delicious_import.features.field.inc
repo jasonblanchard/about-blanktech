@@ -217,7 +217,7 @@ function delicious_import_field_default_fields() {
           'label' => 'hidden',
           'module' => 'ds',
           'settings' => array(
-            'taxonomy_term_link' => 0,
+            'taxonomy_term_link' => 1,
             'taxonomy_term_separator' => ', ',
           ),
           'type' => 'ds_taxonomy_separator',
