@@ -2,6 +2,7 @@
   Drupal.behaviors.hackathonsResizeImages = {
     attach: function(context, settings) {
 
+
       var origImages = $('.field-name-field-project-screenshot img');
       imageWidths = [];
       imageHeights = [];
@@ -12,13 +13,16 @@
         imageHeights.push(origImages[i].height);
       }
 
+      imageBreakpoint(origImages, 12);
+
       $(window).resize(function() {
         windowRatio = $(window).width() / $(window).height();
 
-        firstBreakpoint(origImages, windowRatio);
+        imageBreakpoint(origImages, windowRatio);
       });
 
-      function firstBreakpoint(origImages, ratio) {
+
+      function imageBreakpoint(origImages, ratio) {
 
         var images = $('.field-name-field-project-screenshot img');
 
@@ -43,6 +47,8 @@
           }
 
           else if ($(document).width() < 780) {
+              $(screenshot).css("width", "95%");
+              $(screenshot).css("height", "auto");
           }
         }
       }
