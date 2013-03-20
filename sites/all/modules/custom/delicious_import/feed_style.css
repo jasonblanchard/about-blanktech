@@ -153,3 +153,8 @@ ol.linenums li {
   color: rgb(79,115,160) !important;
 }
 
+/** Tag form **/
+#views-exposed-form-content-feed-page input {
+    width: 100%;
+}
+
