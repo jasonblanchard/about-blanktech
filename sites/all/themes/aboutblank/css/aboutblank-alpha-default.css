@@ -8,6 +8,10 @@
     float: left;
 }
 
+.navigation {
+  display: block;
+}
+
 .mobile-menu-wrapper {
   display: none;
 }

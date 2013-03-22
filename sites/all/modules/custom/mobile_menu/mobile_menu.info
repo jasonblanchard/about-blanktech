@@ -5,3 +5,4 @@ dependencies[] = features
 dependencies[] = menu
 features[features_api][] = api:1
 features[menu_custom][] = menu-mobile-main-menu
+scripts[] = mobile_menu.js

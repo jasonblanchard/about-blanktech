@@ -150,3 +150,18 @@ ul#main-menu li.active a{
   font-size: .87em;
 }
 
+/* Mobile Resets */
+
+.mobile-menu-wrapper {
+  margin-bottom: 50px;
+}
+
+.mobile-menu-wrapper li {
+  list-style-type: none !important;
+  list-style-image: none !important;
+}
+
+.navigation {
+  display: none;
+}
+
