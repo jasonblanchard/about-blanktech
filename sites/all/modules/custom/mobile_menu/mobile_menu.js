@@ -7,14 +7,17 @@
 
       $(menu).hide();
 
-      button = $('.mobile-menu-wrapper').prepend("<div><a href='#' class='mobile-button push-right'><span class='bar'></span><span class='bar'></span><span class='bar'></span></a><div>");
+      if ($('.mobile-button').length == 0) {
 
-      $('.mobile-button').click(function() {
-        menu.slideToggle('fast');
+        button = $('.mobile-menu-wrapper').prepend("<div><a href='#' class='mobile-button push-right'><span class='bar'></span><span class='bar'></span><span class='bar'></span></a><div>");
 
-        return false;
+        $('.mobile-button').click(function() {
+          menu.slideToggle('fast');
+
+          return false;
 
       });
+      }
 
     }
   }
