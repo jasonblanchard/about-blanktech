@@ -1,3 +1,12 @@
 .push-right {
   float: right;
 }
+
+span.bar {
+  display: block;
+  width: 20px;
+  height: 2px;
+  background-color: rgb(145, 145, 145);
+  margin: 0 auto;
+  margin-top: 4px;
+}

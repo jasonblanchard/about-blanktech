@@ -165,3 +165,18 @@ ul#main-menu li.active a{
   display: none;
 }
 
+.mobile-button {
+  width: 40px;
+  height: 25px;
+  background: rgb(209, 209, 209);
+  border: 1px solid rgb(160, 160, 160);
+  border-radius: 3px;
+  margin-top: 5px;
+  padding-top: 3px;
+}
+
+.mobile-button:hover {
+  background: rgb(185, 185, 185);
+}
+
+
