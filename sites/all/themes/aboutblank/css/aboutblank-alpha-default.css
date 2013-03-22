@@ -7,3 +7,7 @@
     width: 400px;
     float: left;
 }
+
+.mobile-menu-wrapper {
+  display: none;
+}
