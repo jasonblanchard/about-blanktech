@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the goodreads_feed feature.
+ */
+
+include_once 'goodreads_feed.features.inc';
