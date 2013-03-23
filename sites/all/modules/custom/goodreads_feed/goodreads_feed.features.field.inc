@@ -46,11 +46,11 @@ function goodreads_feed_field_default_fields() {
       'description' => '',
       'display' => array(
         'default' => array(
-          'label' => 'above',
-          'module' => 'text',
+          'label' => 'hidden',
+          'module' => 'custom_formatters',
           'settings' => array(),
-          'type' => 'text_default',
-          'weight' => 3,
+          'type' => 'custom_formatters_goodreads_title_with_link',
+          'weight' => '1',
         ),
         'teaser' => array(
           'label' => 'above',
@@ -115,11 +115,11 @@ function goodreads_feed_field_default_fields() {
       'description' => '',
       'display' => array(
         'default' => array(
-          'label' => 'above',
-          'module' => 'text',
+          'label' => 'hidden',
+          'module' => 'custom_formatters',
           'settings' => array(),
-          'type' => 'text_default',
-          'weight' => 2,
+          'type' => 'custom_formatters_goodreads_book_cover',
+          'weight' => '0',
         ),
         'teaser' => array(
           'label' => 'above',
@@ -185,11 +185,11 @@ function goodreads_feed_field_default_fields() {
       'description' => '',
       'display' => array(
         'default' => array(
-          'label' => 'above',
+          'label' => 'hidden',
           'module' => 'link',
           'settings' => array(),
           'type' => 'link_default',
-          'weight' => 1,
+          'weight' => '2',
         ),
         'teaser' => array(
           'label' => 'above',
@@ -215,9 +215,9 @@ function goodreads_feed_field_default_fields() {
         ),
         'enable_tokens' => 1,
         'rel_remove' => 'default',
-        'title' => 'none',
+        'title' => 'value',
         'title_maxlength' => '128',
-        'title_value' => '',
+        'title_value' => 'Currently reading on Goodreads',
         'url' => 0,
         'user_register_form' => FALSE,
         'validate_url' => 0,

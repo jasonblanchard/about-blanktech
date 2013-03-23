@@ -68,6 +68,11 @@ function goodreads_feed_feeds_importer_default() {
             'target' => 'field_goodreads_link:url',
             'unique' => FALSE,
           ),
+          4 => array(
+            'source' => 'xpathparser:4',
+            'target' => 'created',
+            'unique' => FALSE,
+          ),
         ),
         'update_existing' => '1',
         'input_format' => 'plain_text',

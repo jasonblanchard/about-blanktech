@@ -158,3 +158,7 @@ ol.linenums li {
     width: 100%;
 }
 
+/** Goodreads **/
+.node-goodreads-book .group-left {
+  width: 15% !important;
+}
