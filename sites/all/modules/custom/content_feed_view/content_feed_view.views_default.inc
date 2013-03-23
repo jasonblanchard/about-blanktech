@@ -75,6 +75,7 @@ function content_feed_view_views_default_views() {
   $handler->display->display_options['filters']['type']['value'] = array(
     'blog_post' => 'blog_post',
     'delicious_link' => 'delicious_link',
+    'goodreads_book' => 'goodreads_book',
     'twitter_message' => 'twitter_message',
   );
   /* Filter criterion: Content: Has taxonomy term */
