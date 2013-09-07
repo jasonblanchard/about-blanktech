@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 32
+/svn/!svn/ver/88/trunk/lib/oauth
+END
+OAuthRequest.php
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/85/trunk/lib/oauth/OAuthRequest.php
+END
+OAuth2Request.php
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/85/trunk/lib/oauth/OAuth2Request.php
+END
+OAuthUtil.php
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/!svn/ver/87/trunk/lib/oauth/OAuthUtil.php
+END
+OAuthXShared.php
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/88/trunk/lib/oauth/OAuthXShared.php
+END
+OAuthServerBackend.php
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/87/trunk/lib/oauth/OAuthServerBackend.php
+END
+OAuthClient.php
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/85/trunk/lib/oauth/OAuthClient.php
+END
+OAuth2Util.php
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/81/trunk/lib/oauth/OAuth2Util.php
+END
+OAuth2Client.php
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/87/trunk/lib/oauth/OAuth2Client.php
+END
+OAuthSignature.php
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/77/trunk/lib/oauth/OAuthSignature.php
+END
+OAuth2Signature.php
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/79/trunk/lib/oauth/OAuth2Signature.php
+END
+OAuthServer.php
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/87/trunk/lib/oauth/OAuthServer.php
+END
