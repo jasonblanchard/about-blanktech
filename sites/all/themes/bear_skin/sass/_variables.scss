@@ -9,6 +9,7 @@ $grey: #EFF2F1;
 $greyer: #d1d3d2;
 $blue: #61AEE2;
 $dark: #555555;
+$orange: #C27E34;
 $whitey: #f9f9f9;
 $vertical-gutter: 10px 0;
 @mixin linear-gradient($fromColor, $toColor) {
@@ -63,12 +64,12 @@ $sb-padding: 0.2em 1.1em 0.3em 1.2em;  // Button padding
 }
 @mixin m-links {
  a {
-   color: $blue;
+   color: $orange;
    text-decoration: none;
    &:hover {
     color: #443C45;
     text-decoration: underline; }
-   &:visited { color: $blue; }
+   &:visited { color: $orange; }
  }
 }
 @mixin borderRadius($radius: 8px) {

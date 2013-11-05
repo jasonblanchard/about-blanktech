@@ -60,13 +60,13 @@ li a.active {
   ul.menu { /* Menu block links */
     margin: 0;
     padding: 0;
-    text-align: left; /* LTR */
+    text-align: center; /* LTR */
 
     li { /* A simple method to get navigation links to appear in one line. */
-      float: left; /* LTR */
       padding: 0 10px 0 0; /* LTR */
       list-style-type: none;
       list-style-image: none;
+      display: inline;
     }
   }
 }
@@ -80,6 +80,8 @@ li a.active {
   visibility: hidden;
 }
 #navigation ul.menu li {
+  font-size: 1.2em;
+
   &:hover > ul {
     visibility: visible;
     opacity: 1;

@@ -157,9 +157,10 @@
 ***********/
 body {
   color: #555555;
+  background-color: #FAFAFA;
 }
 body a {
-  color: #61aee2;
+  color: #c27e34;
   text-decoration: none;
 }
 body a:hover {
@@ -167,7 +168,7 @@ body a:hover {
   text-decoration: underline;
 }
 body a:visited {
-  color: #61aee2;
+  color: #c27e34;
 }
 
 html, body, button, input, select, textarea {
@@ -184,6 +185,9 @@ h1, h2, h3, h4, h5 {
   min-width: 300px;
 }
 
+#navigation ul.menu {
+  margin-top: 10px;
+}
 #navigation ul.menu li {
   text-transform: none;
 }
@@ -196,7 +200,7 @@ h1, h2, h3, h4, h5 {
   -webkit-margin-start: 0;
 }
 #navigation ul.menu li a {
-  color: #61aee2;
+  color: #c27e34;
   text-decoration: none;
 }
 #navigation ul.menu li a:hover {
@@ -204,26 +208,20 @@ h1, h2, h3, h4, h5 {
   text-decoration: underline;
 }
 #navigation ul.menu li a:visited {
-  color: #61aee2;
+  color: #c27e34;
 }
-#navigation ul.menu li a {
-  background-color: #eff2f1;
+#navigation ul.menu li a, #navigation ul.menu li a:visited {
+  color: #505050;
+  font-family: "Helvetica Neue", sans-serif;
   padding: 7px 15px 6px 15px;
-  -webkit-border-radius: 0 0 4px 4px;
-  -moz-border-radius: 0 0 4px 4px;
-  border-radius: 0 0 4px 4px;
-  -webkit-background-clip: padding-box;
-  -moz-background-clip: padding;
-  background-clip: padding-box;
-  display: block;
+  text-shadow: 0 1px #FDFDFD;
 }
-#navigation ul.menu li a:hover, #navigation ul.menu li a.active {
-  color: #ffffff;
-  text-decoration: underline;
-  background: #d1d3d2;
-}
-#navigation ul.menu li a.active, #navigation ul.menu li a:visited {
+#navigation ul.menu li a:hover, #navigation ul.menu li a.active, #navigation ul.menu li a:visited:hover, #navigation ul.menu li a:visited.active {
+  border-bottom: 3px solid #DD8C32;
   text-decoration: none;
+}
+#navigation ul.menu li a.active, #navigation ul.menu li a:visited.active {
+  color: rgba(194, 126, 52, 0.8);
 }
 #navigation ul.menu ul {
   z-index: 100;

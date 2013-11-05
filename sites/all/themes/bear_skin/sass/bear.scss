@@ -22,6 +22,7 @@
 body {
   color: $dark;
   @include m-links;
+  background-color: #FAFAFA;
 }
 html, body, button, input, select, textarea {
   @include bearfont-main;
@@ -34,22 +35,23 @@ h1, h2, h3, h4, h5 {
   min-width: 300px;
 }
 #navigation ul.menu {
+  margin-top: 10px;
+
   li {
     text-transform: none;
     @include clear-space;
     @include m-links;
-    a {
-      background-color: $grey;
+    a, a:visited {
+      color: rgb(80,80,80);
+      font-family: "Helvetica Neue", sans-serif;
       padding: 7px 15px 6px 15px;
-      @include bottom-border-radius;
-      display: block;
+      text-shadow: 0 1px #FDFDFD;
       &:hover, &.active {
-        color: #ffffff;
-        text-decoration: underline;
-        background: $greyer;
-      }
-      &.active, &:visited {
+        border-bottom: 3px solid #DD8C32;
         text-decoration: none;
+      }
+      &.active {
+        color: rgba(194,126,52,0.8);
       }
     }
   }
