@@ -46,12 +46,18 @@ h1, h2, h3, h4, h5 {
       font-family: "Helvetica Neue", sans-serif;
       padding: 7px 15px 6px 15px;
       text-shadow: 0 1px #FDFDFD;
-      &:hover, &.active {
+      border-bottom: 3px solid transparent;
+      -webkit-transition: border .1s linear;
+      -moz-transition: border .1s linear;
+      -transition: border .1s linear;
+      &:hover {
         border-bottom: 3px solid #DD8C32;
         text-decoration: none;
+
       }
       &.active {
         color: rgba(194,126,52,0.8);
+        text-decoration: none;
       }
     }
   }
@@ -132,7 +138,7 @@ h1 {
 .wrapper.header {
   #header {
     padding: $vertical-gutter;
-    padding-bottom: 25px;
+    padding-bottom: 14px;
     position: relative;
     #bear-user-menu {
       position: absolute;
@@ -157,9 +163,15 @@ h1 {
   }
 }
 h1#site-name {
- font-size: 1.6em;
- line-height: .5em;
+ font-size: 3.3em;
+ line-height: .3em;
  margin: 26px 0 0 25px;
+  a {
+    -webkit-transition: color .1s linear;
+    -moz-transition: color .1s linear;
+    -transition: color .1s linear;
+  }
+
   a:link, a:visited {
       color: #6B6762;
       text-shadow: 0 1px #F7F7F7;
@@ -170,7 +182,20 @@ h1#site-name {
     text-decoration: none;
     color: #C27E34;
   }
+
+  @include breakpoint ($breakpoint-medium-width) {
+    font-size: 2em;
+  }
 }
+
+.branding {
+  float: right;
+  margin-top: 10px;
+  @include breakpoint ($breakpoint-medium-width) {
+    display: none;
+  }
+}
+
 #block-search-form {
   background: #FFFFFF;
   padding: 0 0 0 10px;

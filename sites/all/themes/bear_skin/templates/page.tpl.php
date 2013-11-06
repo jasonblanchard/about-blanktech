@@ -17,6 +17,7 @@
           <?php if ($site_slogan): ?>
             <h2 id="site-slogan"><?php print $site_slogan; ?></h2>
           <?php endif; ?>
+          
         </hgroup><!-- /#name-and-slogan -->
       <?php endif; ?>
 
@@ -32,6 +33,10 @@
             <?php endif; ?>
         </div>
         <?php endif; ?>
+
+        <div class='branding'>
+          <?php print render($page['branding']); ?>
+        </div>
     </header>
   </div>
   <div class="wrapper navigation">

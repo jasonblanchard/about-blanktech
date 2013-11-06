@@ -90,6 +90,7 @@ scripts[] = js/script.js
 ;   <?php print $header_top; ?>
 
 regions[header]         = Header
+regions[branding]       = Branding
 regions[navigation]     = Navigation bar
 regions[highlighted]    = Highlighted
 regions[help]           = Help

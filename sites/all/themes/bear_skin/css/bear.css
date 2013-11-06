@@ -215,13 +215,18 @@ h1, h2, h3, h4, h5 {
   font-family: "Helvetica Neue", sans-serif;
   padding: 7px 15px 6px 15px;
   text-shadow: 0 1px #FDFDFD;
+  border-bottom: 3px solid transparent;
+  -webkit-transition: border .1s linear;
+  -moz-transition: border .1s linear;
+  -transition: border .1s linear;
 }
-#navigation ul.menu li a:hover, #navigation ul.menu li a.active, #navigation ul.menu li a:visited:hover, #navigation ul.menu li a:visited.active {
+#navigation ul.menu li a:hover, #navigation ul.menu li a:visited:hover {
   border-bottom: 3px solid #DD8C32;
   text-decoration: none;
 }
 #navigation ul.menu li a.active, #navigation ul.menu li a:visited.active {
   color: rgba(194, 126, 52, 0.8);
+  text-decoration: none;
 }
 #navigation ul.menu ul {
   z-index: 100;
@@ -350,7 +355,7 @@ h1 {
 
 .wrapper.header #header {
   padding: 10px 0;
-  padding-bottom: 25px;
+  padding-bottom: 14px;
   position: relative;
 }
 .wrapper.header #header #bear-user-menu {
@@ -425,9 +430,14 @@ h1 {
 }
 
 h1#site-name {
-  font-size: 1.6em;
-  line-height: .5em;
+  font-size: 3.3em;
+  line-height: .3em;
   margin: 26px 0 0 25px;
+}
+h1#site-name a {
+  -webkit-transition: color .1s linear;
+  -moz-transition: color .1s linear;
+  -transition: color .1s linear;
 }
 h1#site-name a:link, h1#site-name a:visited {
   color: #6B6762;
@@ -436,6 +446,21 @@ h1#site-name a:link, h1#site-name a:visited {
 h1#site-name a:hover {
   text-decoration: none;
   color: #C27E34;
+}
+@media (max-width: 800px) {
+  h1#site-name {
+    font-size: 2em;
+  }
+}
+
+.branding {
+  float: right;
+  margin-top: 10px;
+}
+@media (max-width: 800px) {
+  .branding {
+    display: none;
+  }
 }
 
 #block-search-form {
