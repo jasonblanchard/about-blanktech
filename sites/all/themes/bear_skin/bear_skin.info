@@ -92,6 +92,7 @@ scripts[] = js/script.js
 regions[header]         = Header
 regions[branding]       = Branding
 regions[navigation]     = Navigation bar
+regions[second_nav]     = Second Navigation Bar
 regions[highlighted]    = Highlighted
 regions[help]           = Help
 regions[content]        = Content
