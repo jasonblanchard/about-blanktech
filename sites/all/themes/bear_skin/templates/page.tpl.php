@@ -46,10 +46,10 @@
   </div>
   <div class="wrapper main">
     <div id="main">
-      <div class="second-nav-bar">
-        <?php print render($page['second_nav']); ?>
-      </div>
       <div id="content" class="column" role="main">
+        <div class="second-nav-bar">
+          <?php print render($page['second_nav']); ?>
+        </div>
         <?php print render($page['highlighted']); ?>
         <?php print $breadcrumb; ?>
         <a id="main-content"></a>
