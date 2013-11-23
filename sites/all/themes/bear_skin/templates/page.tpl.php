@@ -47,7 +47,7 @@
   <div class="wrapper main">
     <div id="main">
       <div id="content" class="column" role="main">
-        <div class="second-nav-bar">
+        <div class="second-nav-bar region-header-first clearfix">
           <?php print render($page['second_nav']); ?>
         </div>
         <?php print render($page['highlighted']); ?>

@@ -55,7 +55,7 @@
 .region-header-first {
   background: #E2E2E2;
   padding: 10px;
-  box-shadow: inset 0 0px 10px rgb(173, 173, 173);
+  box-shadow: inset 0 0px 10px rgba(173, 173, 173, 0.46);
   border-radius: 3px;
   margin-bottom: 10px;
 }
@@ -107,6 +107,8 @@
 
 .region-header-first .block-tagclouds {
   color: rgb(187, 185, 185);
+  width: 50%;
+  float: right;
 }
 
 .region-header-first [title="more tags"] {
@@ -172,4 +174,14 @@ ol.linenums li {
         float: none !important;
         margin: 0 auto;
     }
+}
+
+/** Layout **/
+.block-views-exp-content-feed-page {
+  width: 50%;
+  float: left;
+} 
+
+#block-menu-menu-feed-filter {
+  width: 50%;
 }
