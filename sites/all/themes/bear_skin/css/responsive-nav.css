@@ -83,6 +83,7 @@ a.meanmenu-reveal {
   color: #c27e34;
   border-bottom: 1px solid #AFAFAF;
   text-decoration: none;
+  text-transform: none;
 }
 
 .mean-container .mean-nav ul li li a {
